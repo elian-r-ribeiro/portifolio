@@ -7,4 +7,4 @@ function calcularIdade(dataNascimento) {
     return idade;
 }
 
-document.getElementById('ageText').innerText = `Meu nome é Elian Rodrigues Ribeiro, tenho ${calcularIdade('2004-05-29')} anos e atualmente moro na cidade de Cantagalo - PR, e também tenho disponibilidade para trabalho (presencial) em Guarapuava - PR e Curitiba - PR. Atualmente estou cursando o 4º período de Engenharia de Software na faculdade UniGuairacá em Guarapuava - PR. Pretendo seguir o rumo de desenvolvimento back-end.`;
+document.getElementById('ageText').innerText = `Meu nome é Elian Rodrigues Ribeiro, tenho ${calcularIdade('2004-05-29')} anos e atualmente moro na cidade de Cantagalo - PR, e também tenho disponibilidade para trabalho (presencial) em Guarapuava - PR e Curitiba - PR. Atualmente estou cursando o 5º período de Engenharia de Software na faculdade UniGuairacá em Guarapuava - PR. Pretendo seguir o rumo de desenvolvimento back-end.`;
