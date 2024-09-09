@@ -1,10 +1,54 @@
-function calcularIdade(dataNascimento) {
-    const hoje = new Date();
-    const nascimento = new Date(dataNascimento);
-    const diff = hoje - nascimento;
 
-    const idade = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
-    return idade;
+//animação sidebar
+document.querySelectorAll("#Close-menu").forEach(function(element) {
+    element.addEventListener("click", () =>{
+        document.querySelector(".container").classList.toggle("show-menu")
+    })
+})
+
+//debounce
+function debounce(func, wait, immediate) {
+	let timeout
+	return function(...args) {
+		const context = this
+		const later = function() {
+			timeout = null
+			if (!immediate) func.apply(context, args)
+		}
+		const callNow = immediate && !timeout
+		clearTimeout(timeout)
+		timeout = setTimeout(later, wait)
+		if (callNow) func.apply(context, args)
+	}
 }
 
-document.getElementById('ageText').innerText = `Meu nome é Elian Rodrigues Ribeiro, tenho ${calcularIdade('2004-05-29')} anos e atualmente moro na cidade de Cantagalo - PR, e também tenho disponibilidade para trabalho (presencial) em Guarapuava - PR e Curitiba - PR. Atualmente estou cursando o 5º período de Engenharia de Software na faculdade UniGuairacá em Guarapuava - PR. Pretendo seguir o rumo de desenvolvimento back-end.`;
+
+
+// animação scrool =============================
+const target = document.querySelectorAll("[data-anime]")
+
+const animationClass = "animate"
+
+function animeScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
+    target.forEach(function(element) {
+        if((windowTop) > element.offsetTop){
+            element.classList.add(animationClass)
+        } else {
+            element.classList.remove(animationClass)
+        }
+        
+    })
+}
+
+if(target.length) {
+    window.addEventListener('scroll', debounce(function() {
+        animeScroll()
+    },10))
+}
+
+
+
+
+
+

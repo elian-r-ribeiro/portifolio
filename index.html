@@ -1,51 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/proprieties.css">
+    <link rel="stylesheet" href="./assets/css/KeyFrames.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hamburguer" id="Close-menu">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="script.js"></script>
-    </head>
-
-    <body>
-        <header class="header">
-            <a href="#" class="logo">Portifolio.</a>
-
-            <nav class="navbar">
-                <a style="--i:1" class="active">Home</a>
-                <a href="about.html" style="--i:2">Sobre</a>
-                <a href="skills.html" style="--i:3">Habilidades</a>
-                <a href="experience.html" style="--i:4">Experiência</a>
-            </nav>
+        <header>
+            <div class="img-wrapper">
+                <img src="./assets/images/backgroundimg.jpg" alt="">
+            </div>
+            <div class="banner">    
+                <h1 class="title-style">Olá! Sou Elian Rodrigues Ribeiro!</h1>
+                <p>E este é o meu portfólio.</p>
+                <a href="#sobre" class="ButtonCustom" id="button-banner">Saiba mais</a>
+            </div>
         </header>
 
-        <section class="home">
-            <div class="home-sci">
-                <a href="https://wa.me/41999984544"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="https://www.instagram.com/elian_r.ribeiro/"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/elian-r-ribeiro"><i class='bx bxl-github' ></i></a>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li id="menu-1" class="menu-item"><a id="Close-menu" href="#" class="menu-link">home</a></li>
+                    <li id="menu-2" class="menu-item"><a id="Close-menu" href="#sobre" class="menu-link">sobre mim</a></li>
+                    <li id="menu-3" class="menu-item"><a id="Close-menu" href="#conhecimentos" class="menu-link">conhecimentos</a></li>
+                    <li id="menu-4" class="menu-item"><a id="Close-menu" href="#projetos" class="menu-link">projetos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/elian-rodrigues-ribeiro-36096a256/" target="_blank"><img src="assets/images/li.png" alt="linkedin logo" width="30"></a>
+                <a href="https://www.instagram.com/elian_r.ribeiro/" target="_blank"><img src="assets/images/ig.png" alt="instagram logo" width="30"></a>
+                <a href="https://github.com/elian-r-ribeiro" target="_blank"><img src="assets/images/github.png" alt="github logo" width="30"></a>
             </div>
+        </aside>
 
-            <div class="home-content">
-                <h1 class="greeting">Olá, sou o Elian Ribeiro</h1>
-                <h3>Futuro desenvolvedor back-end</h3>
-                <a href="https://www.linkedin.com/in/elian-rodrigues-ribeiro-36096a256/" class="btn">Me contrate</a>
+        <section class="sessao-sobre" id="sobre" >
+            <div class="sobre-header">
+                <h1>Sobre mim</h1>
             </div>
-
-            <div class="home-img">
-                <div class="glowing-circle">
-                    <span></span>
-                    <span></span>
-                    <div class="image">
-                        <img src="Imagem do WhatsApp de 2023-11-24 à(s) 16.05.03_adf8a9e9.jpg" alt="">
+            <div class="texto-sobre">
+                Sou um entusiasta em aprender novas ferramentas e técnicas para aprimorar ainda
+                mais meu trabalho, e estou sempre buscando me atualizar com as tendências mais
+                recentes. Sou alguém dedicado, que sempre darei meu melhor naquilo que estou
+                fazendo, sei trabalhar bem em equipe, tenho boa comunicação e tenho um ótimo perfil
+                analítico. Desde criança gostei de tecnologia, seja software, hardware, programação, ou
+                qualquer coisa do tipo, entendo bem da área. Tenho um bom senso de liderança. Sou
+                competitivo, porém, sei respeitar o trabalho em equipe e deixar a competição de lado
+                quando é preciso. Encaro bem mudanças, quando me dão um objetivo / desafio / meta
+                para realizar, sempre me animo e tento cumprir da melhor maneira possível, e quando
+                consigo concluir, por menor que seja, fico animado.<br>
+                <br>
+            </div>
+            <div class="cards">
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/foto.png" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>Quem sou eu</h2>
+                            <h3>para além do código</h3>
+                            <P>
+                                Eu adoro a oportunidade de descobrir soluções inovadoras e
+                                inventivas para dilemas intricados, e estou constantemente
+                                em busca de adquirir conhecimento e evoluir como um profissional.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*29NeeIGT0BElEBNfzE_VlQ.jpeg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>Experiência</h2>
+                            <h3>profissional</h3>
+                            <P>
+                                Ainda em busca da minha primeira oportunidade.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="https://potomac.edu/wp-content/uploads/2020/05/problem-solving-skills-e1590502433369.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>Conhecimento</h2>
+                            <h3>Acadêmico</h3>
+                            <P>
+                                Atualmente, estou no 6º período do curso de 
+                                Engenharia de Software 
+                                na Faculdade UniGuairacá em Guarapuava-PR e
+                                focado em terminar o curso de JAVA da COD3R.
+                            </P>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </body>
 
+        <section class="sessao-conhecimentos" >
+            <div class="sessao-header"id="conhecimentos">
+                <h1 class="title-style">Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>Css</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <img src="assets/images/ionic.png" alt="ionic logo" width="100">
+                        <h3>Ionic</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="left">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e Github</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="conhecimento" data-anime="right">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-java"></i>
+                        <h3>JAVA</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                    </div>
+                </div>
+                <div class="imagemFundo">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-projetos" id="projetos" >
+            <div class="projetos-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="cards">
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="https://play-lh.googleusercontent.com/jyZpqVZ6l75SLAc8hBc6blhSMcr9IhANkp4hV5jiQsI8nI2sWnzr9TXr4Zs3fdsxHlA" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>Campo Minado</h2>
+                            <h3>JAVA</h3>
+                            <P>
+                                Este projeto foi desenvolvido junto com o curso de JAVA da COD3R, utilizando apenas o terminal.
+                            </P>
+                            <a href="https://github.com/elian-r-ribeiro/minesweeper" target="_blank" class="ButtonSend">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="https://groupgordon.com/wp-content/uploads/2022/04/Messe_Luzern_Corporate_Event.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>App de eventos</h2>
+                            <h3>Ionic</h3>
+                            <P>
+                                Desenvolvi este projeto como meu TCC em Análise e Desenvolvimento de Sistemas,
+                                um aplicativo para criação, participação e geração de relatórios de eventos.
+                            </P>
+                            <a href="https://github.com/elian-r-ribeiro/e-vent" target="_blank" class="ButtonSend">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-anime="up">
+                    <div class="card-img-wrapper">
+                        <img src="https://img.freepik.com/vetores-premium/conceito-de-midia-social-notificacao-de-mensagens-de-bate-papo-no-smartphone-mulher-na-tela-do-celular-com-baloes-de-fala_24877-67031.jpg" alt="">
+                    </div>
+                    <div class="background">
+                        <div class="card-info">
+                            <h2>App de troca de mensagens</h2>
+                            <h3>Ionic</h3>
+                            <P>
+                                Desenvolvi este projeto como um projeto pessoal,
+                                nada mais é que um aplicativo de troca de mensagens.
+                            </P>
+                            <a href="https://github.com/elian-r-ribeiro/concord" target="_blank" class="ButtonSend">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="https://www.linkedin.com/in/elian-rodrigues-ribeiro-36096a256/" target="_blank"><img src="assets/images/li.png" alt="linkedin logo" width="30"></a>
+                    <a href="https://www.instagram.com/elian_r.ribeiro/" target="_blank"><img src="assets/images/ig.png" alt="instagram logo" width="30"></a>
+                    <a href="https://github.com/elian-r-ribeiro" target="_blank"><img src="assets/images/github.png" alt="github logo" width="30"></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li>+ 55 (41) 9 9998-4544</li>
+                        <li>elianrodriguesribeiro@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    Elian Rodrigues Ribeiro © 2024 - Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
 </html>
+
+
