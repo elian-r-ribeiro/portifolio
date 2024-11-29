@@ -47,8 +47,12 @@ if(target.length) {
     },10))
 }
 
+function playBackgroundMusic() {
+    const audio = document.getElementById('backgroundMusic');
 
-
-
-
-
+    if(audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
